@@ -1,0 +1,124 @@
+
+  
+  
+  body {
+    background-color: #000000;
+    font-family: 'Ubuntu Mono', monospace; /* Use Ubuntu Mono or any other monospace font */
+    color: #00ff00;
+  }
+  
+  /* Remaining CSS styles remain unchanged */
+  
+  /* Navbar Styles */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.navbar a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  
+}
+
+.navbar a:hover {
+  color: #64ffda;
+}
+
+.navbar li:hover {
+  background-color: #2a2a2a;
+  border-radius: 5px;
+}
+
+.navbar .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .logo-name {
+  color: #00ff00;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+
+}
+
+
+/* Content Styles */
+
+.content {
+    width: 80%; /* Width of the content */
+    margin: 0 auto; /* Center the content on the page */
+    padding: 20px; /* Padding around the content */
+    color: #00ff00; /* Text color matching the overall theme */
+  }
+  
+  /* Person Section */
+  .person-section {
+    display: flex; /* Display the image and bio side by side */
+    align-items: center; /* Align items in the middle */
+    justify-content: space-between; /* Space out the image and bio */
+    margin-bottom: 40px; /* Space between each person section */
+  }
+  
+  /* Person Photo */
+  .person-photo {
+    width: 200px; /* Set the width of the photo */
+    height: 200px; /* Set the height of the photo */
+    object-fit: cover; /* Ensure the photo covers the area */
+    border-radius: 50%; /* Make the photo circular */
+    border: 2px solid #00ff00; /* Add green border around the photo */
+    margin-right: 20px; /* Margin to space out the image and text */
+  }
+  
+  /* Person Bio */
+  .person-bio {
+    flex: 1; /* Take up the remaining space */
+    color: #00ff00; /* Text color matching the theme */
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .person-section {
+      flex-direction: column; /* Stack photo and bio on top of each other */
+      align-items: center; /* Center-align them */
+    }
+    
+    .person-photo {
+      margin-bottom: 20px; /* Add margin below the photo on smaller screens */
+      margin-right: 0; /* Remove right margin */
+    }
+  }
+  
+/* Footer Styles */
+.footer {
+    background-color: #1a1a1a;
+    color: greenyellow;
+    text-align: center;
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    width: 100%; /* Make the footer span the full width of the viewport */
+    bottom: 0; /* Position the footer at the bottom of the viewport */
+  }
